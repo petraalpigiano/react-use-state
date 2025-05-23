@@ -61,3 +61,18 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* BUTTONS */
+.button {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  border: 1px solid #0d6efd;
+  background-color: #0d6efd;
+  padding: 0.5rem;
+  color: white;
+}
+/* .active {
+  background-color: #ffc008;
+} */
