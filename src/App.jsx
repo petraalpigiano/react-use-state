@@ -1,3 +1,7 @@
+import languages from "./data/languages";
+import Button from "./components/Button";
+import Card from "./components/Card";
+
 export default function App() {
   return (
     <>
@@ -14,12 +18,15 @@ export default function App() {
           <button className="button">ReactJS</button>
         </div>
         <div className="container-card">
-          <div className="card-title">HTML</div>
-          <div className="card-content">
-            HTML (HyperText Markup Language) è il linguaggio standard per creare
-            pagine e applicazioni web. Struttura il contenuto web e fornisce
-            elementi di base come titoli, paragrafi e immagini.
-          </div>
+          {languages.map(function (currentLanguage) {
+            return (
+              <Card
+                key={currentLanguage.id}
+                title={currentLanguage.title}
+                description={currentLanguage.description}
+              />
+            );
+          })}
         </div>
       </div>
     </>
