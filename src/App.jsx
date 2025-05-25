@@ -10,12 +10,11 @@ export default function App() {
       </div>
       <div className="container ">
         <div className="container-buttons">
-          <button className="button active">HTML</button>
-          <button className="button">CSS</button>
-          <button className="button">JavaScript</button>
-          <button className="button">Node.js</button>
-          <button className="button">Express</button>
-          <button className="button">ReactJS</button>
+          {languages.map(function (currentLanguage) {
+            return (
+              <Button key={currentLanguage.id} title={currentLanguage.title} />
+            );
+          })}
         </div>
         <div className="container-card">
           {languages.map(function (currentLanguage) {
